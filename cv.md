@@ -12,15 +12,17 @@
 I am studying for my Bachelor's degree in Business Informatics in BSU. I am keen on my field of studies and on everything connected with modern technologies.
 My aim at the course is to get all required for _Junior Dev_ position!
 
+## Skills
+
+- HTML
+- CSS
+- Git
+
 ## Code Examples
 
 ```
 #include <iostream>
 #include <clocale>
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
-#include <ctime>
 
 using namespace std;
 
@@ -67,8 +69,15 @@ printf("%d\n", min);
        }
        puts("\nРезультат");
        printf("%d\n",r );
-
    return 0;
 }
 
 ```
+
+## Experience and Education
+
+- University: BSU, Economic Dpt
+- Online Courses:
+  - HTML Academy
+  - CS50 video course
+  - COIL Destination Marketing
