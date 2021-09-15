@@ -2,10 +2,10 @@
 
 ## Contacts
 
-- Location: Minsk, Belarus
-- Phone: +375 33 602-90-77
-- Email: komissarova.taisa@gmail.com
-- GitHub: taisakamisarava
+- **Location:** Minsk, Belarus
+- **Phone:** +375 33 602-90-77
+- **Email:** komissarova.taisa@gmail.com
+- **GitHub:** taisakamisarava
 
 ## About
 
@@ -76,8 +76,12 @@ printf("%d\n", min);
 
 ## Experience and Education
 
-- University: BSU, Economic Dpt
-- Online Courses:
+- **University:** BSU, Economic Dpt
+- **Online Courses:**
   - HTML Academy
   - CS50 video course
   - COIL Destination Marketing
+
+## English
+
+**B2** - upper intermediate. My writing, reading and listening may be concerned as advanced, but I am not so good at speaking
