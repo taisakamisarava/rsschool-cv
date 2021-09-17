@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taisa Komissarova </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="main-wrapper">
+      <div class="intro">
+        <div class="gray" id="gray-1">
+          <header class="header">
+            <nav class="nav">
+              <ul>
+                <li class="under">
+                  <a href="#personal" class="nav-item">personal</a>
+                </li>
+                <li class="under">
+                  <a href="#experience" class="nav-item">my experience</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <img src="img/photo.png" alt="personal photo" id="photo" />
+        </div>
+        <h1 id="great-text">
+         Taisa Komissarova  
+        </h1>
+      </div>
+
+      <h2 class="heading" id="personal">Contacts</h2>
+
+      <section class="section">
+        <ul id="contacts" class="main-text">
+          <li id="contact-1">taisa.komissarova@gmail.com</li>
+          <li id="contact-2">+375 33 602-90-77</li>
+          <li id="contact-3">taisakamisarava</li>
+        </ul>
+      </section>
+
+      <section class="section centered">
+        <div class="title-wrapper">
+          <h2 class="title">About</h2>
+          <div class="purple" id="first-p"></div>
+        </div>
+        <span id="about-me" class="main-text"
+          >I am studying for my Bachelor's degree in Business Informatics in BSU. I am keen on my field of studies and on everything connected with modern technologies.
+          My aim at the course is to get all required for _Junior Dev_ position!</span
+        >
+      </section>
+
+      <h2 class="heading" id="experience">Skills</h2>
+
+      <section class="section">
+        <ul id="skills" class="main-text">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+          </ul> 
+
+      </section>
+
+      <section class="section centered">
+        <div class="title-wrapper">
+          <h2 class="title">Code example</h2>
+          <div class="purple" id="second-p"></div>
+        </div>
+        <pre class="main-text" id="code">
+        
+            #include <iostream>
+            #include <clocale>
+            
+            using namespace std;
+            
+            int main()
+            {
+               using std::setlocale;
+               setlocale(LC_ALL,"");
+               srand(time( 0));
+               int a[15],n,i,k, r, z, kol=0;
+            
+               printf("Выберите тип ввода: 1-c клавиатуры, 2-с помощью rand() ");
+               scanf("%d",&k);
+               if ((k>0)&&(k<=2))
+               {
+                 printf ("Введите размер массива не более 15 элементов, N = ");
+                 scanf("%d",&n);
+                 printf("Массив A \n");
+                 switch(k) {
+                   case 2: for (i=0; i<n; i++){
+                           a[i] = rand()%21-10;
+                           printf("%4d",a[i]);
+                           }
+                           break;
+                    case 1: for (i=0; i<n; i++) scanf("%d",&a[i]);
+                            break;
+                 }
+               }
+               else {puts("Не выбран тип ввода...");
+                     return 1;
+                     }
+                     int min = a[0];
+                     for (int i=1; i<n; i++){
+                       if (a[i]<min){
+                         min=a[i];
+                         z=i;
+                       }
+                     }
+            puts ("\n Минимальное число в масcиве");
+            printf("%d\n", min);
+                   r=0;
+                   for (int i=n-1; i>z; i--){    //алгоритм считает елементы с конца
+                       r=r+a[i];
+                       printf("%d\n",a[i]);
+                   }
+                   puts("\nРезультат");
+                   printf("%d\n",r );
+               return 0;
+            }
+        </pre>
+      </section>
+
+      <section class="section">
+        <h2 class="title">Experience and Education</h2>
+        <ul id="edu" class="main-text">
+            <li><b>University</b>: BSU, Economic Dpt</li>
+            <li><b>Online Courses:</b></li>
+              <ol>
+                  <li> HTML Academy</li>
+                  <li> CS50 video course</li>
+                  <li> COIL Destination Marketing</li>
+                  
+              </ol>
+            
+          </ul>
+       
+        
+      </section>
+
+      <section class="section centered">
+        <div class="title-wrapper">
+          <h2 class="title">English</h2>
+          <div class="purple" id="third-p"></div>
+        </div>
+        <span class="main-text" id="english"
+          >B2 - upper intermediate. My writing, reading and listening may be concerned as advanced, but I am not so good at speaking </span
+        >
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <a href="https://github.com/taisakamisarava" class="main-text" id="github"
+            >GitHub</a
+          >
+
+          <time class="main-text" id="time">2021</time>
+          
+          <a href="https://rs.school/js-stage0/"
+            ><img src="icons/rs.svg" alt="rs school logo" id="rs-logo"
+          /></a>
+        </div>
+      </footer>
+    
+  </body>
